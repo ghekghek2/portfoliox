@@ -1,0 +1,220 @@
+
+.border{
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background: transparent;
+    
+    
+
+border-bottom: 2px dashed #454545;
+
+border-left: 2px dashed #454545;
+display: flex;
+align-items: flex-end;
+position: fixed;
+}
+
+
+.container .nav {
+    z-index: 1;
+   
+    height: 90vh;
+    width: 20%;
+  
+  display: flex;
+ align-items: flex-end;
+ 
+    
+}
+.container .nav .nav-wrapper{
+ 
+   height: 50%;
+    display: flex;
+    align-items: flex-end;
+   position: fixed;
+   
+}
+.container .nav .nav-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   
+    height:50%;
+
+
+  
+}
+
+.container .nav .nav-wrapper ul li a{
+    font-size: var(--step--1);
+
+}
+
+
+
+/*  */
+
+#well{
+    width: 90%;
+    scroll-behavior: smooth;
+  
+    
+}
+section, #topbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .my-section{
+    height: 100vh;
+    width: 100%;
+   
+  }
+
+  .my-section .my-sec-wrapper{
+width: 100%;
+height: 100vh;
+    display: flex;
+    
+justify-content: space-between;
+  }
+.title ,.images , .content{
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.images{
+    align-items: flex-end;
+ 
+}
+.images img{
+    width: 100%;
+
+
+}
+  .content{
+
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content p{
+    width: 50%;
+    text-align: right;
+   
+  }
+  .title{
+    align-items: flex-start;
+    padding-top: 10em;
+  }
+.title h1{
+    font-size: var(--step-5);
+    font-weight: 900;
+    color: var(--dark-1);
+}
+  
+  #topbtn {
+    cursor: pointer;
+    z-index: 100;
+    bottom: 20px;
+    position: fixed;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: gainsboro;
+    animation: jump 1s linear infinite;
+    opacity: 0;
+    transition: all .3s linear;
+  }
+  
+  span {
+    
+    transition: all 1.5s ease;
+    color: black;
+  }
+  #title1 {
+    opacity: 1;
+  }
+  
+  @keyframes jump {
+    25% { transform: translateY(10px); }
+    50%, 100% { transform: translateY(0); }
+    75% { transform: translateY(-10px); }
+  }
+  
+
+  @media only screen and (max-width: 1200px) {
+
+    .my-section .my-sec-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    }
+
+    .my-section .my-sec-wrapper .title{
+        padding: 0;
+        justify-content: center;
+    }
+    .my-section .my-sec-wrapper .content  {
+justify-content: center;
+    }
+    .my-section .my-sec-wrapper .content  p{
+text-align: center;
+    }
+
+    .my-section .my-sec-wrapper .images{
+        
+       width: 50%;
+       display: flex;
+    justify-content: center;
+
+        
+    }
+    .my-section .my-sec-wrapper .images img{
+    width:70%;
+    height: 100%;
+    }
+  }
+
+
+  @media only screen and (max-width: 768px) {
+
+    .my-section .my-sec-wrapper .title , .content{
+      width: auto;
+        height: auto;
+        }
+    
+
+
+        .my-section .my-sec-wrapper .images{
+width: 50%;
+
+        }
+        .my-section .my-sec-wrapper .images img{
+width: 100%;
+
+        }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+
+    .my-section .my-sec-wrapper .content  p{
+        text-align: left;
+            }
+
+    .my-section .my-sec-wrapper .images {
+        width:70%;
+        
+                }
+      
+  } 
