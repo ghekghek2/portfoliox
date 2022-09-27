@@ -213,8 +213,22 @@ width: 100%;
             }
 
     .my-section .my-sec-wrapper .images {
-        width:70%;
+        width:80%;
         
                 }
       
   } 
+
+  
+#about{
+  background-color: hotpink;
+  display: none;
+  }
+  #skill{
+  background-color: #454545;
+  display: none;
+  }
+  #contact{
+  background-color: #A2D729;
+  display: none;
+  }

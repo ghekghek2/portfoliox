@@ -19,10 +19,10 @@
     <div class="nav">
         <div class="nav-wrapper">
             <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About me</a></li>
-    <li><a href="#skill">Skill</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a class="link-home" href="#home">Home</a></li>
+    <li><a class="link-about" href="#about">About me</a></li>
+    <li><a class="link-skill" href="#skill">Skill</a></li>
+    <li><a class="link-contact" href="#contact">Contact</a></li>
             </ul>
         </div>
      
@@ -43,10 +43,10 @@
             </div>
 
         </section>
-        <section id="about" class="my-section"><span >Two</span></section>
-        <section id="skill" class="my-section"><span >Three</span></section>
-        <section id="contact" class="my-section"><span >Four</span></section>
-        <section id="title5" class="my-section"><span >Five</span></section>
+        <section id="home" class="my-section"><span >Two</span></section>
+        <section id="about" class="my-section"><span >Three</span></section>
+        <section id="skill" class="my-section"><span >Four</span></section>
+        <section id="contact" class="my-section"><span >Five</span></section>
         <div id="topbtn" onclick="goTop()">&#8593;</div>
       </div>
   
@@ -54,5 +54,26 @@
 
 
 <script src="index.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+       
+        
+  $("a").click(function(){
+    // $("section").fadeToggle();
+ 
+    $("section").fadeOut(100);
+    $("section").fadeIn(500);
+
+
+   
+  });
+
+        
+});
+</script>
 </body>
 </html>
