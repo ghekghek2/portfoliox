@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="./style/home.css" />
+    <link rel="stylesheet" href="./style/navmobile.css">
     <script
       src="https://kit.fontawesome.com/3bb0c534e5.js"
       crossorigin="anonymous"
@@ -46,10 +47,10 @@
                 <button class="btn contact">Contact me</button>
               </div>
               <div class="social-icon">
-                <i class="fab fa-viber"></i>
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-linkedin-in"></i>
-                <i class="fas fa-at"></i>
+                <i class="icon-hov fab fa-viber"></i>
+                <i class="icon-hov fab fa-facebook-f"></i>
+                <i class="icon-hov fab fa-linkedin-in"></i>
+                <i class="icon-hov fas fa-at"></i>
               </div>
             </div>
             <div class="images">
@@ -96,6 +97,27 @@
         <section id="skill" class="my-section"><span>Four</span></section>
         <section id="contact" class="my-section"><span>Five</span></section>
         <div id="topbtn" onclick="goTop()">&#8593;</div>
+
+
+
+
+
+
+        
+<div id="circularMenu1" class="circular-menu circular-menu-left active">
+
+  <a class="floating-btn" onclick="hamburger()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="#home" onclick="hamburger()" class="menu-item fa fa-home"></a>
+    <a href="#about" onclick="hamburger()" class="menu-item fa fa-user"></a>
+    <a href="#skill" onclick="hamburger()" class="menu-item fa fa-pie-chart"></a>
+    <a href="#contact" onclick="hamburger()" class="menu-item fa fa-cog"></a>
+  </menu>
+
+</div>
       </div>
     </div>
 

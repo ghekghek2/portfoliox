@@ -149,3 +149,13 @@ function yScroll() {
   document.addEventListener("scroll", yScroll);  //control topbtn'opacity
   document.addEventListener('DOMMouseScroll', wheel, false); //firefox
   document.addEventListener('mousewheel', wheel, false); //chrome, IE
+
+// hamburger
+
+
+
+function hamburger (){
+var hamburger = document.getElementById('circularMenu1');
+hamburger.classList.toggle('active')
+
+}

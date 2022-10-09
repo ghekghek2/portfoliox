@@ -75,7 +75,8 @@ p{
     position: relative;
     display: flex;
     width:min(98%,1850px);
-    
+    gap: 2em;
+   
    
 
   
@@ -107,6 +108,8 @@ p{
     -webkit-box-shadow: 1px 8px 12px -4px rgba(69,69,69,0.75);
     -moz-box-shadow: 1px 8px 12px -4px rgba(69,69,69,0.75);
 }
+
+
 
 
 /* splide */
