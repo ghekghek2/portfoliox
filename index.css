@@ -66,7 +66,7 @@ p{
 .section{
     cursor: pointer;
     display: flex;
-    
+    height: 100%;
     align-items: flex-end;
     
 }
@@ -76,7 +76,7 @@ p{
     display: flex;
     width:min(98%,1850px);
     gap: 2em;
-   
+  
    
 
   

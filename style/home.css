@@ -1,6 +1,6 @@
 .border {
   height: 90%;
-  width: min(98%,1850px);
+  width: min(98%, 1850px);
   z-index: -1;
   position: absolute;
   background: transparent;
@@ -12,10 +12,10 @@
   align-items: flex-end;
   position: fixed;
   -moz-transform: translate(5px, 10px) skew(13deg, 16deg);
--webkit-transform: translate(5px, 10px) skew(13deg, 16deg);
--o-transform: translate(5px, 10px) skew(13deg, 16deg);
--ms-transform: translate(5px, 10px) skew(13deg, 16deg);
-transform: translate(5px, 10px) skew(13deg, 16deg);
+  -webkit-transform: translate(5px, 10px) skew(13deg, 16deg);
+  -o-transform: translate(5px, 10px) skew(13deg, 16deg);
+  -ms-transform: translate(5px, 10px) skew(13deg, 16deg);
+  transform: translate(5px, 10px) skew(13deg, 16deg);
 }
 
 .container .nav {
@@ -34,7 +34,6 @@ transform: translate(5px, 10px) skew(13deg, 16deg);
   display: flex;
   align-items: flex-end;
   position: fixed;
-
 }
 .container .nav .nav-wrapper ul {
   display: flex;
@@ -42,7 +41,6 @@ transform: translate(5px, 10px) skew(13deg, 16deg);
   justify-content: space-around;
 
   height: 50%;
-
 }
 
 .container .nav .nav-wrapper ul li a {
@@ -79,12 +77,12 @@ section,
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 500px;
+
 }
 .title,
 .images,
 .content {
   display: flex;
-
 }
 
 .images {
@@ -93,11 +91,11 @@ section,
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  z-index: 2;
 }
 .images img {
   width: 100%;
   height: 80%;
-  
 }
 .content {
   align-items: flex-end;
@@ -106,21 +104,20 @@ section,
   flex-direction: column;
   justify-content: center;
   gap: 0.25em;
+  z-index: 3;
 }
-
-
 
 .content p {
   width: 70%;
   text-align: right;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 1em;
   margin: 1em 0;
 }
-.social-icon{
+.social-icon {
   display: flex;
   gap: 1em;
   align-items: flex-end;
@@ -130,19 +127,16 @@ section,
   cursor: pointer;
 }
 
-
 .title {
   align-items: flex-start;
   padding-top: 10em;
 }
 .title h1 {
-
   font-size: var(--step-5);
   font-weight: 900;
   color: var(--dark-1);
   color: transparent;
-  text-shadow: 0 0 5px rgba(0,0,0,0.5);
-
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 #topbtn {
@@ -190,8 +184,6 @@ span {
     padding-left: 1em;
   }
 
-  
-
   .my-section .my-sec-wrapper .title {
     padding: 0;
     grid-row: 1;
@@ -202,10 +194,9 @@ span {
   }
   .my-section .my-sec-wrapper .content {
     justify-content: flex-start;
-    
+
     align-items: flex-end;
 
-  
     padding-top: 0;
     grid-column: 1;
     grid-row: 2;
@@ -221,8 +212,6 @@ span {
     justify-content: flex-start;
     gap: 1em;
     padding: 1em 0;
-    
-
   }
 
   .my-section .my-sec-wrapper .images {
@@ -232,30 +221,25 @@ span {
     justify-content: center;
   }
 
-  .social-icon{
+  .social-icon {
     width: 80%;
-  margin-left: auto;
-      }
+    margin-left: auto;
+  }
 
-
-
-      .container .nav{
-        display: none;
-      }
+  .container .nav {
+    display: none;
+  }
 }
-
 
 @media only screen and (max-width: 950px) {
   .my-section .my-sec-wrapper {
     grid-template-columns: 1fr 1fr;
-    
   }
-
-  }
+}
 
 @media only screen and (max-width: 768px) {
   .my-section .my-sec-wrapper {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     /* grid-template-rows:100px 1fr 1fr ; */
     grid-template-rows: auto;
   }
@@ -273,10 +257,11 @@ span {
     grid-column: 1/3;
     grid-row: 3;
     width: 70%;
-    height:100%;
+    height: 100%;
     margin-left: auto;
+  
   }
-  .my-section .my-sec-wrapper .images img{
+  .my-section .my-sec-wrapper .images img {
     width: 80%;
     height: 100%;
     margin-left: auto;
@@ -286,13 +271,9 @@ span {
     width: 90%;
   }
 
-  .social-icon{
+  .social-icon {
     width: 90%;
-
-      }
-
-
-
+  }
 
   .title {
     align-items: center;
@@ -301,7 +282,6 @@ span {
 
   .my-section .my-sec-wrapper .content p {
     width: 90%;
-   
   }
 
   /* .my-section .my-sec-wrapper .images{
@@ -312,15 +292,17 @@ span {
 
 @media only screen and (max-width: 600px) {
   .my-section .my-sec-wrapper .content .buttons {
-   flex-direction: column;
-   width: 90%;
-   align-items: flex-start;
-   margin-left: auto;
+    flex-direction: column;
+    width: 90%;
+    align-items: flex-start;
+    margin-left: auto;
+    z-index: 99;
   }
 
   .my-section .my-sec-wrapper .content {
     grid-row: 2/4;
     grid-column: 1/3;
+ 
   }
   .my-section .my-sec-wrapper .content p {
     text-align: left;
@@ -330,25 +312,21 @@ span {
     width: 80%;
     height: 100%;
     margin-left: auto;
-    z-index: -1;
+   
   }
 
   .my-section .my-sec-wrapper .images img {
     width: 100%;
     height: 100%;
     padding-left: 5em;
-
-    
   }
-  .nav-link{
+  .nav-link {
     padding: 0;
-    padding-left: .5em;
+    padding-left: 0.5em;
   }
 
-  .social-icon{
-flex-direction: column;
-padding: 1em;
+  .social-icon {
+    flex-direction: column;
+    padding: 1em;
   }
-  
-  
 }

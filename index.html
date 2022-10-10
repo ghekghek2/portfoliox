@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K.Divinagracia</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/about.css" />
     <link rel="stylesheet" href="./style/home.css" />
-    <link rel="stylesheet" href="./style/navmobile.css">
+    <link rel="stylesheet" href="./style/navmobile.css" />
     <script
       src="https://kit.fontawesome.com/3bb0c534e5.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="splide.min.css" />
+   
   </head>
   <body>
     <div class="container">
@@ -24,6 +25,7 @@
             <li><a class="link-home" href="#home">Home</a></li>
             <li><a class="link-about" href="#about">About me</a></li>
             <li><a class="link-skill" href="#skill">Skill</a></li>
+            <li><a class="link-project" href="#project">Project</a></li>
             <li><a class="link-contact" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -59,7 +61,7 @@
           </div>
         </section>
         <section id="about" class="my-section">
-            <!-- splide -->
+          <!-- splide -->
           <!-- <div
             class="splide"
             data-splide='{"type":"loop","perPage":3}'
@@ -74,57 +76,117 @@
             </div>
           </div> -->
 
+          <div class="about-wrapper">
+            <div class="about-header">
+              <h1>
+                Ab
+                <span
+                  ><div class="me-box">
+                    <div class="bgd"></div></div
+                ></span>
+                ut Kevin
+              </h1>
+            </div>
+            <div class="about-me-content">
+              <div class="about-box">
+                <p>
+                  I'm Kevin Divinagracia a Freelancer Computer Technician based
+                  on Mariveles Bataan with years of experience of repairing,
+                  installation, troubleshooting and updating softwares and
+                  applications. Aiming to use my skills and experiences to enter
+                  the world of web development. A Career shifter that wanted to
+                  explore and utilize my strong background and skill being a
+                  computer technician .
+                </p>
+              </div>
+            </div>
 
-<div class="my-sec-wrapper ">
-    <div class="about-me-content">
-        <p>Hi! I'm Kevin Divinagracia a Freelancer Computer Technician based on Mariveles Bataan with years of experience of repairing, installation, troubleshooting and updating softwares and applications. Aiming to use my skills and experiences to enter the world of web development. A Career shifter that wanted to explore and utilize my strong background and skill being a computer technician .</p>
+            <div class="about-right">
+              <div class="like">
+                <div class="like-title">
+                  <h5>Interested to</h5>
+                </div>
+                <div class="like-content">
+                  <ul>
+                    <li>Web Design</li>
+                    <li>Graphics Design</li>
+                    <li>Ui/Ux</li>
+                    <li>Animation</li>
+                    <li>Computer Repair</li>
+                    <li>Smartphones Repair</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-    </div>
-    <div class="education">
-        <h2>Lorem, ipsum dolor.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-    </div>
-<!-- <div class="images-2">
+
+            
+          </div>
+
+          <!-- <div class="images-2">
     <img src="images/me2.png" alt="">
 </div> -->
-</div>          
+        </section>
 
+        <section id="skill" class="my-section">
+        <div class="skill-wrapper">
+          <div class="figma"><i class="fab fa-figma"></i></div>
+          <div class="html"><i class="fab fa-html5"></i></div>
+          <div class="css"><i class="fab fa-css3-alt"></i></div>
+          <div class="bootstrap"><i class="fab fa-bootstrap"></i></div>
+          <div class="sass"><i class="fab fa-sass"></i></div>
+          <div class="jquery"><iconify-icon icon="logos:jquery"></iconify-icon></div>
+          <div class="js"><i class="fab fa-js"></i></div>
+          <div class="react"><i class="fab fa-react"></i></div>
+          <div class="git"><i class="fab fa-git"></i></div>
+        </div>
 
         </section>
-        <section id="about" class="my-section"><span>Three</span></section>
-        <section id="skill" class="my-section"><span>Four</span></section>
+        <section id="project" class="my-section"><span>project</span></section>
         <section id="contact" class="my-section"><span>Five</span></section>
+
         <div id="topbtn" onclick="goTop()">&#8593;</div>
 
+        <div id="circularMenu1" class="circular-menu circular-menu-left">
+          <a class="floating-btn" onclick="hamburger()">
+            <i class="fa fa-bars"></i>
+          </a>
 
-
-
-
-
-        
-<div id="circularMenu1" class="circular-menu circular-menu-left active">
-
-  <a class="floating-btn" onclick="hamburger()">
-    <i class="fa fa-bars"></i>
-  </a>
-
-  <menu class="items-wrapper">
-    <a href="#home" onclick="hamburger()" class="menu-item fa fa-home"></a>
-    <a href="#about" onclick="hamburger()" class="menu-item fa fa-user"></a>
-    <a href="#skill" onclick="hamburger()" class="menu-item fa fa-pie-chart"></a>
-    <a href="#contact" onclick="hamburger()" class="menu-item fa fa-cog"></a>
-  </menu>
-
-</div>
+          <menu class="items-wrapper">
+            <a
+              href="#home"
+              onclick="hamburger()"
+              class="menu-item fa fa-home"
+            ></a>
+            <a
+              href="#about"
+              onclick="hamburger()"
+              class="menu-item fa fa-user"
+            ></a>
+            <a
+              href="#skill"
+              onclick="hamburger()"
+              class="menu-item fa fa-pie-chart"
+            ></a>
+            <a
+              href="#project"
+              onclick="hamburger()"
+              class="menu-item fa fa-pie-chart"
+            ></a>
+            <a
+              href="#contact"
+              onclick="hamburger()"
+              class="menu-item fa fa-cog"
+            ></a>
+          </menu>
+        </div>
       </div>
     </div>
 
     <script src="index.js"></script>
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- 
+    <!-- 
     <script src="splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
     <script>
@@ -144,6 +206,7 @@
 
       splide.mount();
     </script> -->
+   
 
     <script>
       $(document).ready(function () {
@@ -155,5 +218,7 @@
         });
       });
     </script>
+
+
   </body>
 </html>
