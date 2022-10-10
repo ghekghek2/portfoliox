@@ -14,7 +14,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="splide.min.css" />
-   
+  
+   <style>
+
+   </style>
   </head>
   <body>
     <div class="container">
@@ -129,8 +132,17 @@
         </section>
 
         <section id="skill" class="my-section">
-        <div class="skill-wrapper">
-          <div class="figma"><i class="fab fa-figma"></i></div>
+          <div id="tag-cloud" class="tag"></div>
+
+          <div id="tag-cloud2"></div>
+          
+          <canvas id="container" width="640" height="480">
+          </canvas>
+          
+      
+ 
+     
+          <!-- <div class="figma"><i class="fab fa-figma"></i></div>
           <div class="html"><i class="fab fa-html5"></i></div>
           <div class="css"><i class="fab fa-css3-alt"></i></div>
           <div class="bootstrap"><i class="fab fa-bootstrap"></i></div>
@@ -138,8 +150,10 @@
           <div class="jquery"><iconify-icon icon="logos:jquery"></iconify-icon></div>
           <div class="js"><i class="fab fa-js"></i></div>
           <div class="react"><i class="fab fa-react"></i></div>
-          <div class="git"><i class="fab fa-git"></i></div>
-        </div>
+          <div class="git"><i class="fab fa-git"></i></div> -->
+
+
+        
 
         </section>
         <section id="project" class="my-section"><span>project</span></section>
@@ -186,6 +200,9 @@
     <script src="index.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+          <script src="https://www.jqueryscript.net/demo/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud/jquery.svg3dtagcloud.min.js"></script>
+          <script src="http://musclesoft.github.io/jquery-connections/jquery.connections.js"></script>
     <!-- 
     <script src="splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
@@ -206,7 +223,6 @@
 
       splide.mount();
     </script> -->
-   
 
     <script>
       $(document).ready(function () {
@@ -216,8 +232,132 @@
           $("section").fadeOut(100);
           $("section").fadeIn(500);
         });
+
       });
+
     </script>
+
+    <script>
+      $(document).ready(function() {
+  var entries = [
+    {
+     
+      label: "HTML",
+      
+      target: "_top"
+    },
+    {
+      label: "Bootstrap",
+    
+      target: "_top"
+    },
+    {
+      label: "CSS",
+    
+      target: "_top"
+    },
+    {
+      label: "SaSS",
+   
+      target: "_top"
+    },
+    {
+      label: "javascript",
+      
+      target: "_top"
+    },
+    {
+      label: "React",
+   
+      target: "_top"
+    },
+ 
+    {
+      label: "git",
+   
+      target: "_top"
+    },
+ 
+    {
+      label: "Figma",
+      
+      target: "_top"
+    }
+  ];
+
+  var settings = {
+    entries: entries,
+    width: 400,
+    height: 300,
+    radius: "65%",
+    radiusMin: 35,
+    bgDraw: false,
+    bgColor: "#111",
+    opacityOver: 1.0,
+    opacityOut: 0.05,
+    opacitySpeed: 6,
+    fov: 150,
+    speed: 1,
+    fontFamily: " 'Mulish', sans-serif;",
+    fontSize: "15",
+    fontColor: "#000",
+    fontWeight: "normal", //bold
+    fontStyle: "normal", //italic
+    fontStretch: "expanded", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+    fontToUpperCase: true
+  };
+
+  //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+  $("#tag-cloud").svg3DTagCloud(settings);
+  // $("#tag-cloud2").svg3DTagCloud(settings);
+
+
+
+
+  $( "#tag-cloud svg a:nth-child(1)" ).hover(function() {
+
+    $(".border").css("background-image", "url(/images/me.png)");
+    $(".border").css("background-repeat", "no-repeat");
+   
+    $(".border").fadeIn(500);
+  
+  }, function() {
+
+    $(".border").fadeOut(500);
+
+    $(".border").css("background-image", "");
+    $(".border").fadeIn(500);
+ 
+  });
+
+
+
+  // $( "#tag-cloud svg a:nth-child(2)" ).hover(function() {
+  //   $(".border").css("background-image", "url(/images/me2.png)");
+  //   $(".border").css("background-repeat", "no-repeat");
+  //   $(".border").fadeIn(500);
+  //   ;
+
+  // }, function() {
+ 
+  //   $(".border").fadeOut(500);
+ 
+  // });
+  // $( "#tag-cloud svg a:nth-child(3)" ).hover(function() {
+  //   $(".border").css("background-image", "url(/images/me3.png)");
+  //   $(".border").css("background-repeat", "no-repeat");
+  //   $(".border").fadeIn(500);
+  //   ;
+
+  // }, function() {
+ 
+  //   $(".border").fadeOut(500);
+ 
+  // });
+});
+
+    </script>
+
 
 
   </body>
