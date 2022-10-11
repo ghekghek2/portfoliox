@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/about.css" />
     <link rel="stylesheet" href="./style/home.css" />
     <link rel="stylesheet" href="./style/navmobile.css" />
+    <link rel="stylesheet" href="style/skill.css">
     <script
       src="https://kit.fontawesome.com/3bb0c534e5.js"
       crossorigin="anonymous"
@@ -21,7 +22,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="border"></div>
+      <div class="border">
+        <div class="border-bg">
+
+        </div>
+      </div>
       <div class="nav">
         <div class="nav-wrapper">
           <ul class="nav-link">
@@ -83,10 +88,10 @@
             <div class="about-header">
               <h1>
                 Ab
-                <span
-                  ><div class="me-box">
-                    <div class="bgd"></div></div
-                ></span>
+               <div class="me-box">
+                 <img src="images/me3.png" alt="">
+                    </div
+                >
                 ut Kevin
               </h1>
             </div>
@@ -135,12 +140,10 @@
           <div id="tag-cloud" class="tag"></div>
 
           <div id="tag-cloud2"></div>
-          
-          <canvas id="container" width="640" height="480">
-          </canvas>
-          
-      
- 
+     
+ <div class="skill-me">
+  <img src="images/me2.png" alt="">
+ </div>
      
           <!-- <div class="figma"><i class="fab fa-figma"></i></div>
           <div class="html"><i class="fab fa-html5"></i></div>
@@ -203,6 +206,7 @@
     <script src="//code.jquery.com/jquery.min.js"></script>
           <script src="https://www.jqueryscript.net/demo/3D-Interactive-SVG-Tag-Cloud-Plugin-With-jQuery-SVG-3D-Tag-Cloud/jquery.svg3dtagcloud.min.js"></script>
           <script src="http://musclesoft.github.io/jquery-connections/jquery.connections.js"></script>
+          <script src="skill.js"></script>
     <!-- 
     <script src="splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
@@ -223,140 +227,6 @@
 
       splide.mount();
     </script> -->
-
-    <script>
-      $(document).ready(function () {
-        $("a").click(function () {
-          // $("section").fadeToggle();
-
-          $("section").fadeOut(100);
-          $("section").fadeIn(500);
-        });
-
-      });
-
-    </script>
-
-    <script>
-      $(document).ready(function() {
-  var entries = [
-    {
-     
-      label: "HTML",
-      
-      target: "_top"
-    },
-    {
-      label: "Bootstrap",
-    
-      target: "_top"
-    },
-    {
-      label: "CSS",
-    
-      target: "_top"
-    },
-    {
-      label: "SaSS",
-   
-      target: "_top"
-    },
-    {
-      label: "javascript",
-      
-      target: "_top"
-    },
-    {
-      label: "React",
-   
-      target: "_top"
-    },
- 
-    {
-      label: "git",
-   
-      target: "_top"
-    },
- 
-    {
-      label: "Figma",
-      
-      target: "_top"
-    }
-  ];
-
-  var settings = {
-    entries: entries,
-    width: 400,
-    height: 300,
-    radius: "65%",
-    radiusMin: 35,
-    bgDraw: false,
-    bgColor: "#111",
-    opacityOver: 1.0,
-    opacityOut: 0.05,
-    opacitySpeed: 6,
-    fov: 150,
-    speed: 1,
-    fontFamily: " 'Mulish', sans-serif;",
-    fontSize: "15",
-    fontColor: "#000",
-    fontWeight: "normal", //bold
-    fontStyle: "normal", //italic
-    fontStretch: "expanded", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-    fontToUpperCase: true
-  };
-
-  //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
-  $("#tag-cloud").svg3DTagCloud(settings);
-  // $("#tag-cloud2").svg3DTagCloud(settings);
-
-
-
-
-  $( "#tag-cloud svg a:nth-child(1)" ).hover(function() {
-
-    $(".border").css("background-image", "url(/images/me.png)");
-    $(".border").css("background-repeat", "no-repeat");
-   
-    $(".border").fadeIn(500);
-  
-  }, function() {
-
-    $(".border").fadeOut(500);
-
-    $(".border").css("background-image", "");
-    $(".border").fadeIn(500);
- 
-  });
-
-
-
-  // $( "#tag-cloud svg a:nth-child(2)" ).hover(function() {
-  //   $(".border").css("background-image", "url(/images/me2.png)");
-  //   $(".border").css("background-repeat", "no-repeat");
-  //   $(".border").fadeIn(500);
-  //   ;
-
-  // }, function() {
- 
-  //   $(".border").fadeOut(500);
- 
-  // });
-  // $( "#tag-cloud svg a:nth-child(3)" ).hover(function() {
-  //   $(".border").css("background-image", "url(/images/me3.png)");
-  //   $(".border").css("background-repeat", "no-repeat");
-  //   $(".border").fadeIn(500);
-  //   ;
-
-  // }, function() {
- 
-  //   $(".border").fadeOut(500);
- 
-  // });
-});
-
-    </script>
 
 
 

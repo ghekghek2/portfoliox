@@ -159,3 +159,16 @@ var hamburger = document.getElementById('circularMenu1');
 hamburger.classList.toggle('active')
 
 }
+
+
+// circle menu
+
+$(document).ready(function () {
+  $("a").click(function () {
+    // $("section").fadeToggle();
+
+    $("section").fadeOut(100);
+    $("section").fadeIn(500);
+  });
+
+});

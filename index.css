@@ -110,6 +110,20 @@ p{
 }
 
 
+   .border{
+    position: relative;
+   }
+.border .border-bg{
+position: absolute;
+bottom: 0;
+left: 0;
+    opacity: 0;
+    background-repeat: no-repeat;
+    transition: all linear 0.3s;
+
+}
+
+
 
 /* splide */
 
