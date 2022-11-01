@@ -3,44 +3,44 @@ $(document).ready(function() {
       {
        
         label: "HTML",
-        
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
       {
         label: "Bootstrap",
-      
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
       {
         label: "CSS",
-      
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
       {
         label: "SaSS",
-     
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
       {
         label: "javascript",
-        
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
       {
         label: "React",
-     
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
    
       {
         label: "git",
-     
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       },
    
       {
         label: "Figma",
-        
+        url: 'http://127.0.0.1:5500/index.html#skill',
         target: "_top"
       }
     ];
@@ -64,7 +64,8 @@ $(document).ready(function() {
       fontWeight: "normal", //bold
       fontStyle: "normal", //italic
       fontStretch: "expanded", //wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
-      fontToUpperCase: true
+      fontToUpperCase: true,
+      
     };
   
     //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );

@@ -29,6 +29,7 @@
   color: var(--dark-1);
   display: flex;
   align-items: center;
+  margin-bottom: .10em;
 }
 
 .about-header .me-box {
@@ -67,6 +68,12 @@ height: 80px;
 
 .like .like-title {
   display: flex;
+}
+
+.like .like-title h5{
+font-size: var(--step-3);
+color: var(--dark-1);
+margin: 0;
 }
 .like-content {
   display: flex;

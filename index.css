@@ -17,6 +17,7 @@
     --colored-2:rgb(203, 253, 162);
   
 letter-spacing: .75px;
+
   }
     
 
@@ -35,10 +36,34 @@ body{
 background: #E5ECF4 ;
 display: flex;
 justify-content: flex-end;
-scroll-behavior: smooth;
 
+scroll-behavior: smooth;
     
 
+}
+
+
+input{
+outline-style: none;
+font-size: var(--step--1);
+padding: 8px ;
+color: var(--dark-1);
+border: 1px solid var(--dark-1);
+background: var(--light-1);
+letter-spacing: 1.5px;
+cursor: pointer;
+}
+
+textarea{
+    outline-style: none;
+    background: var(--light-1);
+    font-size: var(--step--1);
+padding: 8px ;
+color: var(--dark-1);
+letter-spacing: 1.5px;
+border: 1px solid var(--dark-1);
+margin-bottom: 1rem;
+cursor: pointer;
 }
 
 
@@ -122,6 +147,8 @@ left: 0;
     transition: all linear 0.3s;
 
 }
+
+
 
 
 

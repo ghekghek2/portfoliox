@@ -178,6 +178,10 @@ span {
 }
 
 @media only screen and (max-width: 1200px) {
+
+  .border{
+    display: none;
+  }
   .my-section .my-sec-wrapper {
     grid-template-columns: 1fr 450px;
     grid-template-rows: auto;
