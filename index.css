@@ -66,6 +66,10 @@ margin-bottom: 1rem;
 cursor: pointer;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 
 @media only screen and (min-width: 1851px) {
     body{
