@@ -64,10 +64,12 @@ letter-spacing: 1.5px;
 border: 1px solid var(--dark-1);
 margin-bottom: 1rem;
 cursor: pointer;
+resize: none;
 }
 
 textarea:focus, input:focus{
-    outline: none;
+    outline: 2px solid var(--dark-1);
+    border: 0;
 }
 
 
